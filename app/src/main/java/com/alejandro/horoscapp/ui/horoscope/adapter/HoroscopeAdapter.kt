@@ -20,9 +20,10 @@ private val onItemSelected:(HoroscopeInfo) ->Unit):
         )
     }
 
+    override fun getItemCount() = horoscopeList.size
+
     override fun onBindViewHolder(holder: HoroscopeViewHolder, position: Int) {
         holder.render(horoscopeList[position], onItemSelected)
     }
-
-    override fun getItemCount() = horoscopeList.size
 }
+

@@ -23,7 +23,7 @@ private fun startRotationAnimation(view:View, newLambda:()->Unit){
         duration=500  //animación en milisegundos
         interpolator = LinearInterpolator () //va a tener la misma velocidad de principio a fin
         rotationBy(360f) //grados de la vuelta. By es sobre si mismo.
-        withEndAction{newLambda}
+        withEndAction{newLambda()}
         start()
     }
 }

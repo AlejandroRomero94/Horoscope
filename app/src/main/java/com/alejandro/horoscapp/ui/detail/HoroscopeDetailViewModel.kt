@@ -19,7 +19,7 @@ class HoroscopeDetailViewModel @Inject constructor(private val getPredictionUseC
     private var _state = MutableStateFlow<HoroscopeDetailState>(HoroscopeDetailState.Loading)
     val state: StateFlow<HoroscopeDetailState> = _state
 
-    lateinit var horoscope:HoroscopeModel
+   lateinit var horoscope:HoroscopeModel
     fun getHoroscope(sign: HoroscopeModel) {
         horoscope=sign
         viewModelScope.launch {
