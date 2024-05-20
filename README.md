@@ -1,8 +1,3 @@
-Proyect from the Android Intermediate course by Aristidevs. Source: https://www.youtube.com/@AristiDevs
-
-Content:
-- Arquitecture MVVM
-- Dependency Injection with Dagger Hilt
-- Retrofit
-- UI Design
-- Unitary Testing
+Choose your zodiac sign to get a prediction.
+Get a random card with a prediction.
+Get your hand on camera to read your hand-lines
