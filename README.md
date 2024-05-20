@@ -1,9 +1,8 @@
-Proyecto del curso intermedio de Aristidevs.
+Proyect from an intermediate course.
 
-Contenidos:
-- Trabajar con Git de manera eficiente y GitFlow.
+Content:
 - Arquitectura MVVM
 - Inyección de dependencias con Dagger Hilt
-- Retrofit nivel PRO
-- Diseño avanzada
-- Testing
+- Retrofit
+- UI Design
+- Unitary Testing
