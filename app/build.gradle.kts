@@ -24,18 +24,26 @@ android {
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
-            isDebuggable=false
+            isDebuggable = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
             resValue("string", "alejandro", "HoroscApp")
-            buildConfigField("String", "BASE_URL", "\"https://newastro.vercel.app/\"")
+            buildConfigField(
+                "String",
+                "BASE_URL",
+                "\"https://newastro.vercel.app/\""
+            )
         }
-        getByName("debug"){
-            isDebuggable=true
+        getByName("debug") {
+            isDebuggable = true
             resValue("string", "alejandro", "[DEBUG]HoroscApp")
-            buildConfigField("String", "BASE_URL", "\"https://newastro-debug.vercel.app/\"")
+            buildConfigField(
+                "String",
+                "BASE_URL",
+                "\"https://newastro-debug.vercel.app/\""
+            )
 
         }
 
@@ -49,7 +57,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
-        buildConfig=true
+        buildConfig = true
     }
 }
 
@@ -57,6 +65,7 @@ dependencies {
 
     implementation("androidx.activity:activity:1.8.0")
     val navVersion = "2.7.1"
+    val cameraVersion = "1.2.3"
 //NavComponent
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
@@ -71,6 +80,13 @@ dependencies {
 
     //Corrutinas
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")
+
+    //Camera x
+    implementation("androidx.camera:camera-core:${cameraVersion}")
+    implementation("androidx.camera:camera-camera2:${cameraVersion}")
+    implementation("androidx.camera:camera-lifecycle:${cameraVersion}")
+    implementation("androidx.camera:camera-view:${cameraVersion}")
+    implementation("androidx.camera:camera-extensions:${cameraVersion}")
 
 
     implementation("androidx.core:core-ktx:1.9.0")
