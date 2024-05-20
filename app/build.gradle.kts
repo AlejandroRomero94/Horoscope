@@ -42,7 +42,7 @@ android {
             buildConfigField(
                 "String",
                 "BASE_URL",
-                "\"https://newastro-debug.vercel.app/\""
+                "\"https://newastro.vercel.app/\""
             )
 
         }
